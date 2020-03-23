@@ -2,18 +2,20 @@
 
 namespace App\View\Components;
 
-// use App\User;
+use App\User;
 use Illuminate\View\Component;
 
 class userlist extends Component
 {
+    public $users;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(User $users)
     {
+        $this->users = $users;
     }
 
     /**
