@@ -24,10 +24,10 @@
                     Success
                     @endslot
                     @slot('cancelhref')
-                    http://localhost:8000/home
+                    {{url('/home')}}
                     @endslot
                     @slot('addhref')
-                    http://localhost:8000/add
+                    {{url('/add')}}
                     @endslot
                     User Listing
                     @endcomponent
